@@ -1,0 +1,102 @@
+#viewbutton {
+  width: 200px;
+  border: black 2px solid;
+  
+}
+
+#deletebutton {
+  width: 200px;
+  border: black 2px solid;
+  
+}
+
+
+.App-container {
+  border: black 2px solid;
+  width: 1100px;
+  border-radius: black 3px solid;
+  margin-top: 20px;
+}
+
+  #nav {
+    background-color: #7c2b0cbe;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    width: 100%;
+  
+  }
+  
+  #content {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color:  #FF9900;
+  
+  }
+
+  .centered-header {
+    text-align: center;
+    vertical-align: middle; 
+    padding: 10px; 
+    background-color: #f8f9fa; 
+    border: 1px solid #dee2e6; 
+  
+  }
+
+  body{
+    height: 100%; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #FF9900;
+  }
+
+  
+  #foto {
+    height: 250px;
+    width: 370px;
+    margin: 20px;
+  }
+  
+
+.neeeds-validation {
+    width: 1000px;
+}
+
+.container {
+
+  background-color: #FF9900;
+}
+
+.centered-cell {
+  text-align: center;
+  vertical-align: middle; 
+  padding: 10px;
+}
+
+#single {
+  border: 2px solid black;
+  padding-top: 20px;
+  width: 90%;
+  background-color: white;
+}
+
+#tp {
+
+  background-color: #FF9900;
+}
+
+#botonsubmit {
+  padding: 10px 10px;
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+  margin-top: 130px;
+  margin-right: 190px;
+}
