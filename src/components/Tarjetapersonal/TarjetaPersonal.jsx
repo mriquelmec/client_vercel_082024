@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import { customAxios } from '../../handlers/api';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const VermiPirata = (props) => {
     const [pirate, setPirate] = useState([])
 
     useEffect (() => {
-        axios.get(`http://localhost:8000/api/pirates/${_id}`)
+        customAxios.get(`/api/pirates/${_id}`)
             .then(res => {
                 console.log(res.data)
                 setPirate(res.data)

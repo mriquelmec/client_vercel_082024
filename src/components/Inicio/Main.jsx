@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom'
-import axios from 'axios';
+import { customAxios } from "../../handlers/api.js";
 
 const Main = (props) => {
     const [pirates, setPirates] = useState([])
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api/pirates/all")
+        customAxios.get("/api/pirates/all")
         .then (res => {
             console.log(res.data)
             setPirates(res.data)
@@ -16,7 +16,7 @@ const Main = (props) => {
 
     const onDeleteHandler = (_id, arrIndex) => {
         console.log("delete")
-        axios.delete("http://localhost:8000/api/pirates/" + _id)
+        customAxios.delete("/api/pirates/" + _id)
             .then(res => {
                 console.log(res)
                 const copyState = [...pirates]
